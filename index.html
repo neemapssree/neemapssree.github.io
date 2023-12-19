@@ -11,11 +11,27 @@
 </style>
 <body>
     <header id="headerTop">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white ms-4" href="#" ><i><b>Learn with Us</b></Learn></i></a>
+        <nav class="navbar navbar-expand-lg pt-3" style="background: transparent;">
+            <div class="container-fluid px-5" style="display: flex !important; justify-content: space-between !important;">
+              <a class="navbar-brand text-white" href="#"><b>Learn with Us</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-basis: auto; flex-grow: 0;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white" style="gap:30px;">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#overview">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-dark btn" href="#register" style="background-color: #fff; box-shadow: -4px 5px 11px #dddddd5e;">Register</a>
+                  </li>                 
+                </ul>
+              </div>
             </div>
-        </nav>        
+          </nav>        
         <div class="container-fluid topSection myContainer">
             <div class="row justify-content-center mx-auto">
                 <div class="col-md-6">
@@ -24,7 +40,7 @@
                     <p style="font-size:20px;">A full-stack developer is a developer or engineer who can build<br>both the <strong><i><u>front end</u></i></strong> and the <strong><i><u>back end</u></i></strong> of a website. The front end<br>
                         require different skill sets. Since full-stack developers are<br>involved with all aspects of the development process, they must<br>have expertise in both.
                     </p>
-                    <h4 style="margin-top:30px;"><a href="#" class="readbtn" style="">READ MORE</a></h4>     
+                    <h4 style="margin-top:30px;"><a href="#overview" class="readbtn" style="">READ MORE</a></h4>     
                 </div>
                 <div class="col-md-6">
                     <img src="image1.png"  alt="image" class="img-fluid">
@@ -32,7 +48,7 @@
             </div>
         </div>
     </header>
-    <div class="container topSection2" style="margin-top:30px;">
+    <div class="container topSection2" style="margin-top:30px;" id="overview">
         <div class="row justify-content-center">
             <div class="col-md-4">                
                 <h3>Course Outcomes</h3>
@@ -87,7 +103,7 @@
             </div>
         </div>        
     </div> 
-    <div class="container third">
+    <div class="container third" id="register">
         <h2 class="text-center">Register Now</h2>
         <form id="myForm" method="POST">
             <div class="form-field">
